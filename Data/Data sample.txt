@@ -1,0 +1,146 @@
+mysql> select *from foodt;
++-----+------------------+------+----------------+------+---------+-------+--------+---------+---------+-------+
+| fid | name             | time | dtype          | cal  | tot_fat | sugar | sodium | protein | sat_fat | carbs |
++-----+------------------+------+----------------+------+---------+-------+--------+---------+---------+-------+
+|   1 | Pancakes         |   15 | Vegan          |  264 |       5 |     8 |    717 |       5 |       1 |    50 |
+|   2 | Greek Salad      |   20 | Vegetarian     |  265 |      22 |     6 |    538 |       6 |       6 |    14 |
+|   3 | Potato Wedges    |   45 | Vegan          |  225 |       7 |     2 |     13 |       4 |       1 |    38 |
+|   4 | Fried Chicken    |   45 | Non-Vegetarian |  887 |      80 |     0 |    389 |      30 |      11 |    14 |
+|   5 | Shrimp Salad     |   80 | Non-Vegetarian |  363 |      30 |     4 |    388 |      17 |       5 |     7 |
+|   6 | Margherita Pizza |   40 | Vegetarian     |  551 |      26 |     5 |   1183 |      29 |      11 |    55 |
++-----+------------------+------+----------------+------+---------+-------+--------+---------+---------+-------+
+6 rows in set (0.00 sec)
+
+mysql> select * from ingredients;
++--------+-------------------+
+| ing_id | ing_name          |
++--------+-------------------+
+|      1 | Olive Oil         |
+|      2 | Garlic            |
+|      3 | Salt              |
+|      4 | Tomato            |
+|      5 | Pizza crust       |
+|      6 | Feta Cheese       |
+|      7 | Mozzarella Cheese |
+|      8 | Shrimp            |
+|      9 | Onion             |
+|     10 | Lemon Juice       |
+|     11 | Pepper            |
+|     12 | Mayonnaise        |
+|     13 | All-Purpose Flour |
+|     14 | Egg               |
+|     15 | Chicken           |
+|     16 | Vegetable Oil     |
+|     17 | Potato            |
+|     18 | Oregano           |
+|     19 | Lettuce           |
+|     20 | Olives            |
+|     21 | Bell Pepper       |
+|     22 | Sugar             |
+|     23 | Baking Powder     |
+|     24 | Water             |
++--------+-------------------+
+24 rows in set (0.00 sec)
+
+mysql> select * from containst;
++------+--------+
+| fid  | ing_id |
++------+--------+
+|    1 |     13 |
+|    1 |     22 |
+|    1 |     23 |
+|    1 |      3 |
+|    1 |     24 |
+|    1 |     16 |
+|    2 |     19 |
+|    2 |      9 |
+|    2 |     20 |
+|    2 |     21 |
+|    2 |      4 |
+|    2 |     18 |
+|    2 |      1 |
+|    2 |     10 |
+|    2 |     11 |
+|    3 |     17 |
+|    3 |      1 |
+|    3 |     18 |
+|    3 |      3 |
+|    3 |     11 |
+|    4 |     13 |
+|    4 |     18 |
+|    4 |      3 |
+|    4 |     11 |
+|    4 |     14 |
+|    4 |     15 |
+|    4 |     16 |
+|    5 |      8 |
+|    5 |      9 |
+|    5 |     10 |
+|    5 |      3 |
+|    5 |     11 |
+|    5 |     12 |
+|    5 |      4 |
+|    6 |      1 |
+|    6 |      2 |
+|    6 |      3 |
+|    6 |      4 |
+|    6 |      5 |
+|    6 |      6 |
+|    6 |      7 |
++------+--------+
+41 rows in set (0.00 sec)
+
+mysql> select * from ingredients_type;
++--------+-----------+
+| ing_id | itype     |
++--------+-----------+
+|      1 | Oils      |
+|      2 | Vegetable |
+|      3 | Condiment |
+|      4 | Vegetable |
+|      5 | Grain     |
+|      6 | Dairy     |
+|      7 | Dairy     |
+|      8 | Meat      |
+|      9 | Vegetable |
+|     10 | Condiment |
+|     11 | Condiment |
+|     12 | Dairy     |
+|     13 | Grain     |
+|     14 | Meat      |
+|     15 | Meat      |
+|     16 | Oils      |
+|     17 | Vegetable |
+|     18 | Condiment |
+|     19 | Vegetable |
+|     20 | Vegetable |
+|     21 | Vegetable |
+|     22 | Condiment |
+|     23 | Condiment |
+|     24 | Water     |
++--------+-----------+
+24 rows in set (0.00 sec)
+
+mysql> select * from steps;
++------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| fid  | sequence | description                                                                                                                                                                                                                               |
++------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|    1 |        1 | Sift the flour, sugar, baking powder, and salt into a large bowl. Whisk the water and oil together in a small bowl. Make a well in the center of the dry ingredients, and pour in the wet. Stir just until blended; mixture will be lumpy |
+|    1 |        2 | Heat a lightly oiled griddle over medium-high heat. Drop batter by large spoonfuls onto the griddle, and cook until bubbles form and the edges are dry. Flip, and cook until browned on the other side. Repeat with remaining batter.     |
+|    2 |        1 | In a large salad bowl, combine the Romaine, onion, olives, bell peppers, tomatoes, cucumber and cheese.                                                                                                                                   |
+|    2 |        2 | Whisk together the olive oil, oregano, lemon juice and black pepper. Pour dressing over salad, toss and serve.                                                                                                                            |
+|    3 |        1 | Preheat oven to 425 degrees F (220 degrees C). Line a baking sheet with a silicone baking mat.                                                                                                                                            |
+|    3 |        2 | Toss potato wedges, olive oil, oregano, salt, and black pepper together in a bowl until potatoes are evenly coated. Place wedges on their sides onto the prepared baking sheet.                                                           |
+|    3 |        3 | Bake in the preheated oven for 15 minutes. Flip potatoes onto their other sides; return to oven and cook until crusty and golden brown, about 20 minutes more.                                                                            |
+|    4 |        1 | Add the flour, potato flakes, seasoned salt, and pepper and mix well.                                                                                                                                                                     |
+|    4 |        2 | Beat egg in a shallow dish or bowl. One by one, dredge chicken pieces in egg, then place in bag with crumb mixture. Seal bag and shake to coat.                                                                                           |
+|    4 |        3 | Heat oil in a deep-fryer or large saucepan to 350 degrees F (175 degrees C).                                                                                                                                                              |
+|    4 |        4 | Fry chicken, turning frequently, until golden brown and juices run clear, 15 to 20 minutes.                                                                                                                                               |
+|    5 |        1 | Combine shrimp, onion, lemon juice, salt, pepper and one cup mayonnaise in a mixing bowl. Refrigerate and chill the shrimp mixture for at least one hour.                                                                                 |
+|    5 |        2 | Cut the tops off of the tomatoes and scoop out their insides; chill until the shrimp mixture is well chilled.                                                                                                                             |
+|    5 |        3 | Scoop the shrimp mixture into the hollowed out tomatoes. Serve.                                                                                                                                                                           |
+|    6 |        1 | Stir together olive oil, garlic, and salt; toss with tomatoes, and allow to stand for 15 minutes. Preheat oven to 400 degrees F (200 degrees C).                                                                                          |
+|    6 |        2 | Brush each pizza crust with some of the tomato marinade. Sprinkle the pizzas evenly with Mozzarella cheese. Arrange tomatoes overtop, then feta cheese.                                                                                   |
+|    6 |        3 | Bake in preheated oven until the cheese is bubbly and golden brown, about 10 minutes.                                                                                                                                                     |
++------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+17 rows in set (0.00 sec)
