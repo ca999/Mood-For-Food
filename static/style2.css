@@ -1,0 +1,97 @@
+body {
+  background-image: url('b1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.block
+ {
+  display: block;
+  width: 50%;
+  border: none;
+  background-color: pink;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0px 100px 10px 350px;
+}
+.blockr
+ {
+  display: block;
+  width: 50%;
+  border: none;
+  background-color: white;
+  color: Pink;
+  padding: 25px 28px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 8px;
+  border: 2px solid pink;
+  margin: 0px 100px 10px 350px;
+}
+.blockr:hover {
+  background-color: PeachPuff;
+  color: black;
+}
+.blockf
+ {
+  display: block;
+  width: 15%;
+  border: none;
+  background-color: orange;
+  color: white;
+  padding: 35px 10px 35px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  margin: 20px 5px 10px 5px;
+}
+.blockf:hover {
+  background-color: white;
+  color: black;
+}
+.blockfw
+ {
+  display: block;
+  width: 15%;
+  border: none;
+  background-color: white;
+  color: orange;
+  padding: 35px 10px 35px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  margin: 20px 5px 10px 5px;
+}
+.blockfw:hover {
+  background-color: orange;
+  color: black;
+}
+.block:hover {
+  background-color: DeepPink;
+  color: black;
+}
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.boxhead{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+.p {
+   margin: 25px 50px 75px 100px;
+ }
