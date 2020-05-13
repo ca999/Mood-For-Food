@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Recipe</title>
+    <link rel="stylesheet" type="text/css" href="../static/style3.css">
+</head>
+<style>
+body
+{
+background-image: url('../static/add.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+</style>
+<body class="content">
+
+<h1 align = "center" style="color:white;"> <i>Add Recipe</i></h1>
+<form  align = "center" id = "f1" method = "POST" action = "">
+    <label align  = "left" for = "name" style="color:white;"><b> <i>Recipe name:</i></b>	</label>
+    <input align = "right" type = "text" id = "name" name = "name"><br>
+    <br>
+    <label align  = "left" for = "min" style="color:white;"> <b><i> Preparation time:</i></b>	</label>
+    <input align = "left" type = "text" id = "min" name = "min"><br>
+    <br>
+    <label for = "type" style="color:white;"> <b><i>Type: </i></b>	</label>
+    <select align = "center" id = "type" name ="type">
+        <option value="veg">Vegetarian</option>
+        <option value ="vegan">Vegan</option>
+        <option value ="non"> Non vegetarian </option>
+    </select>
+    <br>
+    <br>
+
+    <p for = "Fruit" align  = "left" style="color:white;"> <b><i>Enter Fruits Required:</i></b>	</p>
+    <textarea align = "center" type = "text" id = "Fruit" name ="fruits" rows ="20" cols = "40" ></textarea>
+    <br>
+    <br>
+    <p style="color:white;" align  = "left" for = "Veg" > <b><i>Vegetables Required:</i></b>	</p>
+    <textarea align = "center" type = "text" id = "Veg" name ="veg" rows ="20" cols = "40" ></textarea>
+    <br>
+    <br>
+    <p style="color:white;" align  = "left" for = "Meat" > <b><i>Meat Required:</i></b>	</p>
+    <textarea  align = "center" type = "text" id = "Meat" name ="meat" rows ="20" cols = "40" ></textarea>
+    <br>
+    <br>
+    <p style="color:white;" align  = "left" for = "Diary" > <b><i>Diary Products Required:</i></b> 	</p>
+    <textarea  align = "center" type = "text" id = "Diary" name ="diary" rows ="20" cols = "40" ></textarea>
+    <br>
+    <br>
+    <p style="color:white;" align  = "left" for = "Spices" > <b><i>Spices Required:</i></b>	</p>
+    <textarea align  ="center" type = "text" id = "Spices" name ="spices" rows ="20" cols = "40" ></textarea>
+    <br>
+    <br>
+
+    <p style="color:white;" align  = "left" for = "Steps"> <b><i>Enter the steps:</i></b>	</p>
+    <textarea  align = "center" type = "text" id = "Steps" name ="steps" rows ="20" cols = "40" ></textarea>
+    <br>
+    <br>
+
+    <p style="color:white;" align  = "center" for = "name" style="color:PaleVioletRed;"> <b><i>Calories:</i></b>	</p>
+    <input align = "center" type = "text" id = "cal" name = "cal"><br>
+    <p style="color:white;" align  = "center" for = "name" style="color:PaleVioletRed;"> <b><i>Total Fat:</i></b>	</p>
+    <input align = "center" type = "text" id = "tot_fat" name = "tot_fat"><br>
+    <p style="color:white;" align  = "center" for = "name" style="color:PaleVioletRed;"> <b><i>Sugar:</i></b>b	</p>
+    <input align = "center" type = "text" id = "sugar" name = "sugar"><br>
+    <p style="color:white;" align  = "center" for = "name" style="color:PaleVioletRed;"> <b><i>Sodium:</i></b>	</p>
+    <input align = "center" type = "text" id = "sodium" name = "sodium"><br>
+    <p style="color:white;" align  = "center" for = "name" style="color:PaleVioletRed;"> <b><i>Protein:</i></b>	</p>
+    <input align = "center" type = "text" id = "protein" name = "protein"><br>
+    <p style="color:white;" align  = "center" for = "name" style="color:PaleVioletRed;"> <b><i>Saturated Fats:</i></b>	</p>
+    <input align = "center" type = "text" id = "sat_fat" name = "sat_fat"><br>
+    <p style="color:white;" align  = "center" for = "name" style="color:PaleVioletRed;"> <b><i>Carbohydrates:</i></b>	</p>
+    <input align = "center" type = "text" id = "carb" name = "carb"><br>
+    
+    <br>
+    
+
+    <input type ="submit">
+
+
+
+
+</form>
+
+
+
+</body>
+</html>

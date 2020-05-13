@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{name}}</title>
+    <link rel="stylesheet" type="text/css" href="../static/style3.css">
+</head>
+<style>
+body
+{
+background-image: url('../static/apricot.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+</style>
+
+
+<body>
+
+<h2 style="font-size:35px;">{{name}}</h2>
+<p style="font-size:20px;"><i>Diet:</i>{{dtype}}</p>
+<p style="font-size:20px;"><i>Prep Time:</i>{{time}}</p>
+
+<h3 style="font-size:30px;"><b>Ingredients</b></h3>
+{% for in in ing %}
+ <p>{{in}}</p>
+{% endfor %}
+<h3 style="font-size:30px;"><b>Steps</b></h3>
+{% for i,j in steps.items() %}
+<p style="font-size:20px;" >{{i}} :{{j}} </p><br>
+{% endfor %}
+
+
+</body>
+</html>

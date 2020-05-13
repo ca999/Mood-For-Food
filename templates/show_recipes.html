@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+    <link rel="stylesheet" type="text/css" href="../static/style3.css">
+</head>
+
+<body>
+<style>
+body
+{
+background-image: url('../static/fruits.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+</style>
+
+
+<form  align = "center" id = "f1" method = "POST" action = ""  style="margin-top:170px">
+    {% for key, value in result.items() %}
+    <a class = "boxhead" href = "/getfid"><button style="margin-left:20px;" class="blockr" name="btn" type="submit" value= {{key}} > {{value}}</button></a>
+    {% endfor %}
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{name}}</title>
+    <link rel="stylesheet" type="text/css" href="../static/style3.css">
+
+</head>
+<style>
+body
+{
+    background-image: url('../static/salad.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+</style>
+<body>
+<form  align = "center" id = "f1" method = "POST" action = "">
+    <label align  = "left" for = "getRecipe" style="color:white; font-size:20px;"> <b><i>Enter {{name}}:</i></b></label>
+    <input align = "center" type = "text" id = "getRecipe" name = "getRecipe" style = " width:50%;margin-top:200px"><br>
+    <br>
+    <a href="/showrecipe"><input style = "background-color: green; margin-left:410px;"type="submit" id = "submit" name = "submit" class="block"></a>
+</form>
+
+</body>
+</html>
